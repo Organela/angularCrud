@@ -1,0 +1,51 @@
+<div *ngIf="editAuthenticate()">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Name" value="{{person.name}}">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Telephone" value="{{person.telephone}}">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="E-mail" value="{{person.email}}">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="State" value="{{person.state}}">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="City" value="{{person.city}}">
+        </mat-form-field><br>
+
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+</div>
+
+<div *ngIf="newAuthenticate()">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Name">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Telephone">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="E-mail">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="State">
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="City">
+        </mat-form-field><br>
+
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+</div>
