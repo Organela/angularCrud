@@ -21,24 +21,38 @@
     </ng-container>
     
     <ng-container matColumnDef="state">
+<<<<<<< HEAD
         <th mat-header-cell *matHeaderCellDef> State </th>
+=======
+        <th mat-header-cell *matHeaderCellDef> Estado </th>
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
         <td mat-cell *matCellDef="let person"> {{person.state}} </td>
     </ng-container>
 
     <ng-container matColumnDef="city">
+<<<<<<< HEAD
         <th mat-header-cell *matHeaderCellDef> City </th>
+=======
+        <th mat-header-cell *matHeaderCellDef> Cidade </th>
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
         <td mat-cell *matCellDef="let person"> {{person.city}} </td>
     </ng-container>
     
     <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let person" class="action-link"> 
+<<<<<<< HEAD
             <button [routerLink]="[ '../../', 'person' , person.id,  'edit']" mat-icon-button aria-label="Edit">
                 <mat-icon>edit</mat-icon>
             </button>
             <button (click)="onDelete(person)" mat-icon-button aria-label="Delete">
                 <mat-icon>delete</mat-icon>
             </button>
+=======
+            <button [routerLink]="[ '../../', 'person' , person.id,  'edit']" mat-icon-button aria-label="Editar">
+                <mat-icon>edit</mat-icon>
+            </button>
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
         </td>
       </ng-container>
 

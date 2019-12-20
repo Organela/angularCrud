@@ -2,13 +2,22 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Person } from './person.model';
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
 @Injectable({
     providedIn: 'root'
 })
 export class PersonService {
     private persons: Person[] = [
         {
+<<<<<<< HEAD
             id: 2,
+=======
+            id: 1,
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
             name: 'Naruto',
             telephone: '799',
             email: 'naruto@gmail.com',
@@ -16,7 +25,11 @@ export class PersonService {
             city: 'Niterói'
         },
         {
+<<<<<<< HEAD
             id: 9,
+=======
+            id: 2,
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
             name: 'André',
             telephone: '699',
             email: 'andre@gmail.com',
@@ -24,7 +37,11 @@ export class PersonService {
             city: 'Niterói'
         },
         {
+<<<<<<< HEAD
             id: 12,
+=======
+            id: 3,
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
             name: 'Bruna',
             telephone: '299',
             email: 'bruna@gmail.com',
@@ -41,6 +58,7 @@ export class PersonService {
         return of(this.persons.find(p => p.id === id));
     }
 
+<<<<<<< HEAD
     save(person: Person) {
         if (person.id) {
             this.updatePerson(person);
@@ -84,4 +102,12 @@ export class PersonService {
         }
         return this.persons;
     }
+=======
+    updatePerson(personData: Person) {
+
+        this.persons[personData.id - 1] = personData;
+
+    }
+
+>>>>>>> 6600e1825fe91c4091ba2677ee66f7b3dbc5b513
 }
